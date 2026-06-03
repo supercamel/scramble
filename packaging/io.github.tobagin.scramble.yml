@@ -11,8 +11,11 @@ finish-args:
 
 cleanup:
   - /include
-  - /lib/pkgconfig
   - /lib/cmake
+  - /lib/girepository-1.0
+  - /share/gir-1.0
+  - /share/man
+  - /share/vala
   - "*.a"
 
 modules:
@@ -54,8 +57,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/strukturag/libde265.git
-        tag: v1.0.18
-        commit: 36ad04841c209cb8b3577ec2723d431b6bf7efa0
+        tag: v1.1.1
+        commit: 4dd701fffac01632ffd5cabc5ef10deb56accba1
 
   - name: libheif
     buildsystem: cmake-ninja
@@ -75,8 +78,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/strukturag/libheif.git
-        tag: v1.21.2
-        commit: 62f1b8c76ed4d8305071fdacbe74ef9717bacac5
+        tag: v1.23.0
+        commit: bd114ed6d592adc92a09882172ab71d1b4c6e1b1
 
   - name: gexiv2
     buildsystem: meson
@@ -96,5 +99,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/tobagin/scramble.git
-        tag: v1.4.3
+        tag: v1.4.4
         commit: d84f5d2cd8e3290f27a74c0ae8cf2ce3c2c511d0

@@ -67,6 +67,14 @@
   </provides>
   
   <releases>
+    <release version="1.4.4" date="2026-06-03">
+      <description>
+        <p>🔧 Maintenance Release</p>
+        <ul>
+          <li>Updated bundled libheif to 1.23.0 and libde265 to 1.1.1 for the Flatpak build</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.4.3" date="2026-04-06">
       <description>
         <p>✨ Batch Processing Discoverability &amp; Keyboard Shortcut Fix</p>

@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.4] - 2026-06-03
+
+### 🔧 Changed
+
+- **Updated bundled dependencies**: libheif 1.21.2 → 1.23.0 and libde265 1.0.18 → 1.1.1 for the Flatpak build.
+
 ## [1.4.3] - 2026-04-06
 
 ### ✨ New Features
