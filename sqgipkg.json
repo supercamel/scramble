@@ -12,6 +12,7 @@
         "build_dir": "build-linux-x86_64",
         "entry_linux": "build-linux-x86_64/src/scramble",
         "deb": {
+          "suite": "noble",
           "download": true,
           "packages": [
             "libgtk-4-dev",
@@ -39,10 +40,15 @@
               "meson compile -C \"$SQGI_LINUX_BUILD_DIR\""
             ],
             "files": [
-              {
-                "path": "build-linux-x86_64/data/io.github.tobagin.scramble.gschema.xml",
-                "dest": "usr/share/glib-2.0/schemas/io.github.tobagin.scramble.gschema.xml"
-              }
+              "build-linux-x86_64/data/io.github.tobagin.scramble.gschema.xml=usr/share/glib-2.0/schemas/io.github.tobagin.scramble.gschema.xml",
+              "build-linux-x86_64/po/en/LC_MESSAGES/scramble.mo=usr/share/locale/en/LC_MESSAGES/scramble.mo",
+              "build-linux-x86_64/po/es/LC_MESSAGES/scramble.mo=usr/share/locale/es/LC_MESSAGES/scramble.mo",
+              "build-linux-x86_64/po/fr/LC_MESSAGES/scramble.mo=usr/share/locale/fr/LC_MESSAGES/scramble.mo",
+              "build-linux-x86_64/po/de/LC_MESSAGES/scramble.mo=usr/share/locale/de/LC_MESSAGES/scramble.mo",
+              "build-linux-x86_64/po/pt/LC_MESSAGES/scramble.mo=usr/share/locale/pt/LC_MESSAGES/scramble.mo",
+              "build-linux-x86_64/data/io.github.tobagin.scramble.desktop=usr/share/applications/io.github.tobagin.scramble.desktop",
+              "build-linux-x86_64/data/io.github.tobagin.scramble.metainfo.xml=usr/share/metainfo/io.github.tobagin.scramble.metainfo.xml",
+              "data/icons/hicolor/scalable/apps/io.github.tobagin.scramble.svg=usr/share/icons/hicolor/scalable/apps/io.github.tobagin.scramble.svg"
             ]
           }
         ]
@@ -52,6 +58,7 @@
         "build_dir": "build-linux-aarch64",
         "entry_linux": "build-linux-aarch64/src/scramble",
         "deb": {
+          "suite": "noble",
           "download": true,
           "packages": [
             "libgtk-4-dev",
@@ -79,10 +86,15 @@
               "meson compile -C \"$SQGI_LINUX_BUILD_DIR\""
             ],
             "files": [
-              {
-                "path": "build-linux-aarch64/data/io.github.tobagin.scramble.gschema.xml",
-                "dest": "usr/share/glib-2.0/schemas/io.github.tobagin.scramble.gschema.xml"
-              }
+              "build-linux-aarch64/data/io.github.tobagin.scramble.gschema.xml=usr/share/glib-2.0/schemas/io.github.tobagin.scramble.gschema.xml",
+              "build-linux-aarch64/po/en/LC_MESSAGES/scramble.mo=usr/share/locale/en/LC_MESSAGES/scramble.mo",
+              "build-linux-aarch64/po/es/LC_MESSAGES/scramble.mo=usr/share/locale/es/LC_MESSAGES/scramble.mo",
+              "build-linux-aarch64/po/fr/LC_MESSAGES/scramble.mo=usr/share/locale/fr/LC_MESSAGES/scramble.mo",
+              "build-linux-aarch64/po/de/LC_MESSAGES/scramble.mo=usr/share/locale/de/LC_MESSAGES/scramble.mo",
+              "build-linux-aarch64/po/pt/LC_MESSAGES/scramble.mo=usr/share/locale/pt/LC_MESSAGES/scramble.mo",
+              "build-linux-aarch64/data/io.github.tobagin.scramble.desktop=usr/share/applications/io.github.tobagin.scramble.desktop",
+              "build-linux-aarch64/data/io.github.tobagin.scramble.metainfo.xml=usr/share/metainfo/io.github.tobagin.scramble.metainfo.xml",
+              "data/icons/hicolor/scalable/apps/io.github.tobagin.scramble.svg=usr/share/icons/hicolor/scalable/apps/io.github.tobagin.scramble.svg"
             ]
           }
         ]
@@ -152,10 +164,13 @@
           "meson compile -C \"$SQGI_WINDOWS_BUILD_DIR\""
         ],
         "files": [
-          {
-            "path": "build-windows-x86_64/data/io.github.tobagin.scramble.gschema.xml",
-            "dest": "share/glib-2.0/schemas/io.github.tobagin.scramble.gschema.xml"
-          }
+          "build-windows-x86_64/data/io.github.tobagin.scramble.gschema.xml=share/glib-2.0/schemas/io.github.tobagin.scramble.gschema.xml",
+          "build-windows-x86_64/po/en/LC_MESSAGES/scramble.mo=share/locale/en/LC_MESSAGES/scramble.mo",
+          "build-windows-x86_64/po/es/LC_MESSAGES/scramble.mo=share/locale/es/LC_MESSAGES/scramble.mo",
+          "build-windows-x86_64/po/fr/LC_MESSAGES/scramble.mo=share/locale/fr/LC_MESSAGES/scramble.mo",
+          "build-windows-x86_64/po/de/LC_MESSAGES/scramble.mo=share/locale/de/LC_MESSAGES/scramble.mo",
+          "build-windows-x86_64/po/pt/LC_MESSAGES/scramble.mo=share/locale/pt/LC_MESSAGES/scramble.mo",
+          "data/icons/hicolor/scalable/apps/io.github.tobagin.scramble.svg=share/icons/hicolor/scalable/apps/io.github.tobagin.scramble.svg"
         ]
       }
     ],
